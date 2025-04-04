@@ -25,7 +25,7 @@ const Mcp = () => {
         setServerMessage("");
 
         try {
-            const response = await axios.post("http://localhost:3000", { mcpConfig });
+            const response = await axios.post("https://mcp-config-az5l.vercel.app/", { mcpConfig });
             console.log(response)
             setTimeout(() => {
                 setServerMessage(JSON.stringify(response.data, null, 2))
