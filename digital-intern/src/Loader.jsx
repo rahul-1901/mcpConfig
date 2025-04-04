@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
-import webLogo from './assets/mcp.png';
+import webLogo from './assets/loader.png';
 
 const Loader = ({ onLoadingComplete }) => {
     const [isDisappearing, setIsDisappearing] = useState(false);
@@ -22,7 +22,7 @@ const Loader = ({ onLoadingComplete }) => {
             <div className="relative">
                 <div className={`transform ${isDisappearing ? 'animate-spin-out' : ''}`}>
                     <Loader2
-                        className="w-24 h-24 text-blue-200 animate-spin z-1001"
+                        className="w-24 h-24 text-blue-300 animate-spin z-1001"
                         strokeWidth={1}
                     />
                 </div>
