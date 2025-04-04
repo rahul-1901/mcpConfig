@@ -80,7 +80,7 @@ const Mcp = () => {
                             onClick={handleSubmit}
                             className="mb-5 cursor-pointer w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 rounded-xl font-medium hover:from-blue-700 hover:to-purple-700 transition-all"
                         >
-                            Test MCP Server
+                            Test 
                         </button>
 
                         {status !== "" ? (
