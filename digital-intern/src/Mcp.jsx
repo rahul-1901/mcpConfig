@@ -54,7 +54,7 @@ const Mcp = () => {
                 <div className='w-full h-auto max-w-3xl border border-black bg-white/10 p-4 rounded-xl'>
                     <div className='flex items-center justify-center gap-2'>
                         <img src={mcpLogo} className='h-10 mt-1'></img>
-                        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-blue-300 to-purple-300">
+                        <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-blue-300 to-purple-300">
                             MCP Server Tester
                         </h1>
                     </div>
@@ -64,7 +64,7 @@ const Mcp = () => {
                             <p className='text-gray-200 mb-5 text-xl'>
                                 MCP Configuration
                             </p>
-                            <div className="w-full flex items-center gap-8 px-4">
+                            <div className="w-full flex items-center gap-5 md:gap-8 px-4">
                                 <Wifi className="text-gray-400" />
                                 <input
                                     type="text"
