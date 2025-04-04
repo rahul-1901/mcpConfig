@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import mcpLogo from './assets/mcp.png'
 import { Wifi, CheckCircle, XCircle, Loader } from 'lucide-react'
 import axios from 'axios'
+import Load from './Loader';
 
 const Mcp = () => {
     const [mcpConfig, setMcpConfig] = useState("");
     const [status, setStatus] = useState("");
     const [responseMessage, setResponseMessage] = useState("");
     const [serverMessage, setServerMessage] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
 
     const handleSubmit = async () => {
         if (!mcpConfig.trim()) {
@@ -47,6 +49,7 @@ const Mcp = () => {
 
     return (
         <>
+            {isLoading && <Load onLoadingComplete={() => setIsLoading(false)} />}
             <div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-700 via-blue-900 to-purple-700 p-2'>
                 <div className='w-full h-auto max-w-3xl border border-black bg-white/10 p-4 rounded-xl'>
                     <div className='flex items-center justify-center gap-2'>
